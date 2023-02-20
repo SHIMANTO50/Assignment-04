@@ -1,5 +1,6 @@
 <?php
 /*1st Problem function*/
+/*1.Write a PHP function to sort an array of strings by their length, in ascending order. (Hint: You can use the usort() function to define a custom sorting function.)*/
 function sort_strings_by_length($arr)
 {
     usort($arr, function ($a, $b) {
@@ -9,6 +10,7 @@ function sort_strings_by_length($arr)
 }
 
 /*2nd Problem function*/
+/*2.Write a PHP function to concatenate two strings, but with the second string starting from the end of the first string.*/
 function concatenate_reverse($str1, $str2)
 {
     $str2_reverse = strrev($str2);
@@ -16,6 +18,7 @@ function concatenate_reverse($str1, $str2)
 }
 
 /*3rd Problem function*/
+/*3.Write a PHP function to remove the first and last element from an array and return the remaining elements as a new array.*/
 function remove_first_and_last($arr)
 {
     array_shift($arr);
@@ -24,6 +27,7 @@ function remove_first_and_last($arr)
 }
 
 /*4th Problem function*/
+/*4.Write a PHP function to check if a string contains only letters and whitespace.*/
 function contains_only_letters_and_whitespace($str)
 {
     return preg_match('/^[a-zA-Z\s]+$/', $str) === 1;
@@ -31,6 +35,7 @@ function contains_only_letters_and_whitespace($str)
 
 
 /*5th Problem function*/
+/*5.Write a PHP function to find the second largest number in an array of numbers.*/
 function find_second_largest($arr)
 {
     $max = $arr[0];
